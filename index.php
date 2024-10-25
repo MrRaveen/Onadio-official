@@ -14,9 +14,14 @@
     <!-- Header with Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="height: 98px;">
-            <a class="navbar-brand" href="#">
-                Onadio Softwares
+            <a class="navbar-brand" href="#" id="orgName">
+            <?php
+include_once('dbProcess.php');
+$test2 = $test1;
+echo "<script>document.getElementById('orgName').innerText='{$test2} {$address}';</script>";
+            ?>
             </a>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,9 +55,7 @@
         <div class="hero-content">
             <h1>Make your dreems possible</h1>
             <p>With our talent and professional work</p>
-            <form action="dbProcess.php" method="post">
             <button class="btn">Get Started</button>
-            </form>
         </div>
     </section><br>
     <h3 style="text-align: center; padding-top: 10px; font-size: 50px; margin-bottom: 0px; font-family: 'Open Sans', sans-serif;">Our Background</h3>

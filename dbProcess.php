@@ -22,8 +22,14 @@
     }
 
     while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
-        echo $row['orgName'] . "<br>";
+        if ($row === null) {
+            echo 'No more rows to fetch.';
+            break;
+        }
+        $test1 = $row["orgName"];
+        $address = $row["address"];
     }
-
+    
+    
     sqlsrv_free_stmt($getResults);
 ?>
