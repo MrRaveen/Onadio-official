@@ -50,7 +50,9 @@
         <div class="hero-content">
             <h1>Make your dreems possible</h1>
             <p>With our talent and professional work</p>
+            <form action="dbProcess.php" method="post">
             <button class="btn">Get Started</button>
+            </form>
         </div>
     </section><br>
     <h3 style="text-align: center; padding-top: 10px; font-size: 50px; margin-bottom: 0px; font-family: 'Open Sans', sans-serif;">Our Background</h3>
